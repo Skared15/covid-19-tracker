@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <form method="POST">
+    <div class="container">
+        <div class="jumbotron">
+        <h1>Welcome to Homepage from Template/index.html</h1>
+        <h2> Register Here</h2>
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type='submit' class="btn btn.primary" value="Register"/>
+        </div>
+    </div>
+    </form>
+</html>
