@@ -10,7 +10,11 @@
         <h2> Register Here</h2>
         {{ form.as_p }}
         {% csrf_token %}
-        <input type='submit' class="btn btn.primary" value="Register"/>
+        <from method="get" action="/success.html">
+            <button type="submit">Submit</button>
+        </from>
+        
+        <!-- <button href='./success.html'>submit</button>  -->
         </div>
     </div>
     </form>

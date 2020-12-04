@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse, redirect
 from .import forms
+from .forms import Loginform
 # Create your views here.
 #function base views
 #class base views
@@ -40,7 +41,9 @@ def create(request):
     else:
         form=forms.Loginform()
         
-    return render(request,'myapp/index.html',{'form':form} )
+    return render(request,'myapp/index.html',{'form':form})
 
-def success(request):
-    return render (request,'myapp/success.html')
+def success(request,register=""):
+    register=register.objects.all()
+    # Loginform=Loginform.objects.all()
+    return render (request,'myapp/success.html',{'Loginform':Loginform})

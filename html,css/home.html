@@ -1,0 +1,39 @@
+
+<!DOCTYPE html><!--let browser know the version of HTML that we are using-->
+
+<html><!--main html tag-->
+
+    <head>
+        <!-- <title>Sign Up page</title> -->
+        <link rel="stylesheet" href="home.css"/>
+    </head>
+    <body> <!--whatever we want to show in the browser and attribute inside tag [ex.-<body"attribute">] -->
+        <!-- <h1>Hey! I am from HTML</h1>
+        <p>This is my paragraph.</p> -->
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+
+        </div>
+
+        <div id="login-box">
+            <div class="left">
+                <h1>sign up</h1>
+                <input type="text" name="user name" placeholder="User Name"/>
+                <input type="text" name="email" placeholder="Enter Email Address"/>
+                <input type="text" name="password" placeholder="Enter Password"/>
+                <input type="text" name="password2" placeholder="Reenter Password"/> 
+
+                <div class="right">
+                    <span class="loginwith">Sign in with</span>
+                    <button onclick="window.location.href='https://twitter.com/login'"class="Social-Signin twitter">Login with twitter</button>
+                    <button onclick="window.location.href='https://www.facebook.com/'" class="Social-Sign in facebook">Login with facebook</button>
+                    <button onclick="window.location.href='https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin'"class="Social-Sign in google">Login with google</button>
+                </div>
+                
+                <input type="submit" name="sign up_submit" value="Sign Up"/>
+            </div>
+        </div>
+    </body>
+</html>

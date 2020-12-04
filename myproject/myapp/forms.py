@@ -23,7 +23,3 @@ class Loginform(forms.ModelForm):
 #
 #       if email!=vemail:
  #           raise forms.ValidationError("Your Email doesn't match")"""
-
-
-
-
